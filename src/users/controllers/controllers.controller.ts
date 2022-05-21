@@ -36,6 +36,6 @@ export class UsersController {
   @Delete(':id')
   async delete(@Param('id') id: string) {
     this.userService.delete(id);
-    return `O usuário com o id ${id} foi deletada com sucesso`;
+    return `O com o id ${id} foi deletada com sucesso`;
   }
 }
