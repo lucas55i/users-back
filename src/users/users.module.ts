@@ -4,10 +4,8 @@ import { UsersController } from './controllers/controllers.controller';
 import { UserSchema } from './models/schemas/users.schema';
 import { UsersService } from './services/users.service';
 
-
-
 @Module({
-  imports:[MongooseModule.forFeature([{ name: 'User', schema: UserSchema }])],
+  imports:[MongooseModule.forFeature([{ name: 'Users', schema: UserSchema }])],
   controllers: [UsersController],
   providers: [UsersService]
 })
