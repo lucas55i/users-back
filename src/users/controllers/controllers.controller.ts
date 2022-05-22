@@ -7,9 +7,13 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
+import { EnumApiTags } from 'src/enums/api-tags';
 import { User } from '../models/user';
 import { UsersService } from '../services/users.service';
 @Controller('users')
+@ApiTags(EnumApiTags.USERS)
+
 export class UsersController {
   constructor(private userService: UsersService) {}
 
