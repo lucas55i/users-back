@@ -17,5 +17,5 @@ export class User extends Document {
     description: 'active of the user',
     example: false,
   })
-  active: boolean;
+  active?: boolean;
 }
